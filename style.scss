@@ -1,13 +1,18 @@
-.paulina {
-    color: red;
-    .dziasek {
-        font-size: 55px;
-    }
-}
-
-.paulina {
-    color: red;
-    .dziasek {
-        font-size: 55px;
+@import "global";
+body {
+    background-image: url('./img/back-img.png');
+    font-family: 'Noto Sans', sans-serif;
+    .container {
+        background-color: white;
+        &.footer-top {
+            border-bottom: 1px solid black;
+            .fb-ico {
+                background-image: url('./img/ico-fb.png');
+                height: 30px;
+                width: 30px;
+                background-repeat: no-repeat;
+            }
+        }
+        &.footer-bottom {}
     }
 }

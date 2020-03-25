@@ -1,15 +1,25 @@
-.paulina {
-  color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.paulina .dziasek {
-  font-size: 55px;
+body {
+  background-image: url("./img/back-img.png");
+  font-family: 'Noto Sans', sans-serif;
 }
 
-.paulina {
-  color: red;
+body .container {
+  background-color: white;
 }
 
-.paulina .dziasek {
-  font-size: 55px;
+body .container.footer-top {
+  border-bottom: 1px solid black;
+}
+
+body .container.footer-top .fb-ico {
+  background-image: url("./img/ico-fb.png");
+  height: 30px;
+  width: 30px;
+  background-repeat: no-repeat;
 }
