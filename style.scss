@@ -1,22 +1,17 @@
+@import "body";
 @import "global";
-body {
-    background-image: url('./img/back-img.png');
-    font-family: 'Noto Sans', sans-serif;
+
+.headbar {
+    height: 200px;
     .container {
         background-color: white;
-        &.headbar-top {
-            border-bottom: 1px solid black;
-            .fb-ico {
-                background-image: url('./img/ico-fb.png');
-                height: 30px;
-                width: 30px;
-                background-repeat: no-repeat;
-            }
-            .ico {
-                text-align: right;
-                font-size: 12px;
-                align-self: center;
-            }
-        }
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
 }
+
+

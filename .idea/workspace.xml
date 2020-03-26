@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51f3e8e0-78a4-4b3f-bd6f-f13dbbb5ee7c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Dealways" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1Zes56cN7tM1Bs8MiURk55EFqWC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51f3e8e0-78a4-4b3f-bd6f-f13dbbb5ee7c" name="Default Changelist" comment="" />
+      <created>1585210708141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585210708141</updated>
+      <workItem from="1585210711156" duration="3995000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2000" y="-354" key="#File_Watchers" timestamp="1585214419011">
+      <screen x="1440" y="-548" width="1920" height="1057" />
+    </state>
+    <state x="2000" y="-354" key="#File_Watchers/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585214419011" />
+    <state x="2000" y="-354" key="#Notifications" timestamp="1585214447727">
+      <screen x="1440" y="-548" width="1920" height="1057" />
+    </state>
+    <state x="2000" y="-354" key="#Notifications/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585214447727" />
+    <state x="1992" y="-505" key="CommitChangelistDialog2" timestamp="1585211709307">
+      <screen x="1440" y="-548" width="1920" height="1057" />
+    </state>
+    <state x="1992" y="-505" key="CommitChangelistDialog2/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585211709307" />
+    <state x="1845" y="-284" width="827" height="475" key="EditFileWatcherDialog" timestamp="1585214417520">
+      <screen x="1440" y="-548" width="1920" height="1057" />
+    </state>
+    <state x="1845" y="-284" width="827" height="475" key="EditFileWatcherDialog/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585214417520" />
+    <state x="304" y="225" key="EditFileWatcherDialog/0.23.1440.808/1440.-548.1920.1057@0.23.1440.808" timestamp="1585210824864" />
+    <state x="1909" y="-381" key="SettingsEditor" timestamp="1585214344556">
+      <screen x="1440" y="-548" width="1920" height="1057" />
+    </state>
+    <state x="1909" y="-381" key="SettingsEditor/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585214344556" />
+    <state x="100" y="123" width="1240" height="608" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1585211391755">
+      <screen x="0" y="23" width="1440" height="808" />
+    </state>
+    <state x="100" y="123" width="1240" height="608" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.808/1440.-548.1920.1057@0.23.1440.808" timestamp="1585211391755" />
+    <state x="2188" y="-101" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585211699578">
+      <screen x="1440" y="-548" width="1920" height="1057" />
+    </state>
+    <state x="2188" y="-101" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585211699578" />
+    <state x="1953" y="-476" width="894" height="885" key="search.everywhere.popup" timestamp="1585213670309">
+      <screen x="1440" y="-548" width="1920" height="1057" />
+    </state>
+    <state x="1953" y="-476" width="894" height="885" key="search.everywhere.popup/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585213670309" />
+    <state x="385" y="78" width="670" height="676" key="search.everywhere.popup/0.23.1440.808/1440.-548.1920.1057@0.23.1440.808" timestamp="1585211201609" />
+  </component>
+</project>
