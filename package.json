@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "scss": "node-sass ./style.scss ./style.css -o . --output-style expanded",
-        "scss:watch": "npm run scss && node-sass ./style.scss ./style.css -wo . --output-style expanded"
+        "scss:watch": "npm run scss && node-sass ./style.scss -wo --follow ./style.css --output-style expanded"
     },
     "author": "",
     "license": "ISC",
