@@ -1,29 +1,73 @@
 @import "body";
 @import "global";
-@import "main-conatiner";
-
-
+@import "main-header";
+@import "light-box";
+$font-small: 12px;
 .headbar {
-
     &__top {
         display: flex;
         justify-content: space-between;
         padding-bottom: 5px;
         padding-top: 5px;
+        border-bottom: 1px solid;
+        background-color: white;
     }
-
     &__social {
-
-        &-media {
-            margin-top: 20px;
+        &-media {}
+        &-icon {}
+    }
+    &__contact {
+        text-align: center;
+        align-self: center;
+    }
+    &__link {
+        font-size: $font-small;
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 25px;
+            height: 14px;
+            background-repeat: no-repeat;
+            transform: translateY(4px);
         }
-
-        &-icon {
-            
+        &--email {
+            margin: 30px;
+            &::before {
+                background-image: url("./img/ico-mail.png");
+            }
+        }
+        &--phone {
+            &::before {
+                background-image: url("./img/ico-phone.png");
+            }
         }
     }
-
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: white;
+    }
+    &__right {
+        display: flex;
+    }
+    .list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        &__menu {
+            list-style-type: none;
+            padding-right: 15px;
+            flex: 1;
+        }
+        &__text {
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 15px;
+        }
+    }
 }
-
-
-

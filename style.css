@@ -2,6 +2,7 @@ body {
   background-image: url("./img/back-img.png");
   background-repeat: no-repeat;
   font-family: 'Noto Sans', sans-serif;
+  background-size: 1700px;
 }
 
 * {
@@ -10,8 +11,38 @@ body {
   box-sizing: border-box;
 }
 
-.container {
-  background-color: white;
+.header__content {
+  margin-top: 90px;
+  margin-bottom: 92px;
+  color: white;
+}
+
+.header__content h1 {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.header__content p {
+  font-size: 20px;
+}
+
+.lightbox {
+  background-color: #f5f5f5;
+}
+
+.lightbox .forWho__main {
+  padding: 20px;
+  height: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #e6232f;
+}
+
+.lightbox .forWho__main h2 {
+  font-size: 26px;
 }
 
 .headbar__top {
@@ -19,8 +50,69 @@ body {
   justify-content: space-between;
   padding-bottom: 5px;
   padding-top: 5px;
+  border-bottom: 1px solid;
+  background-color: white;
 }
 
-.headbar__social-media {
-  margin-top: 20px;
+.headbar__contact {
+  text-align: center;
+  align-self: center;
+}
+
+.headbar__link {
+  font-size: 12px;
+}
+
+.headbar__link::before {
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 14px;
+  background-repeat: no-repeat;
+  transform: translateY(4px);
+}
+
+.headbar__link--email {
+  margin: 30px;
+}
+
+.headbar__link--email::before {
+  background-image: url("./img/ico-mail.png");
+}
+
+.headbar__link--phone::before {
+  background-image: url("./img/ico-phone.png");
+}
+
+.headbar__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: white;
+}
+
+.headbar__right {
+  display: flex;
+}
+
+.headbar .list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.headbar .list__menu {
+  list-style-type: none;
+  padding-right: 15px;
+  flex: 1;
+}
+
+.headbar .list__text {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px;
 }

@@ -1,0 +1,22 @@
+.lightbox {
+  background-color: #f5f5f5;
+  .forWho {
+    &__main {
+        padding: 20px;
+        height: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #e6232f;
+
+      h2 {
+        font-size: 26px;
+      }
+
+    }
+  }
+
+
+}
