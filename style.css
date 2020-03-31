@@ -45,6 +45,72 @@ body {
   font-size: 26px;
 }
 
+.lightbox .forWho__box {
+  text-align: center;
+  padding: 20px;
+}
+
+.lightbox .forWho__box h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.lightbox .forWho__box p {
+  font-size: 14px;
+}
+
+.lightbox .forWho__icon-box {
+  padding-bottom: 28px;
+}
+
+.lightbox .forWho__title {
+  padding-bottom: 45px;
+}
+
+.lightbox .specialize__header-top {
+  padding: 65px 0;
+}
+
+.lightbox .specialize__header-top h2 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.lightbox .specialize__box-list {
+  border: 2px solid red;
+}
+
+.lightbox .specialize__header {
+  background-color: #f08136;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.lightbox .specialize__header h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.lightbox .specialize__lists {
+  columns: 3;
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+.lightbox .specialize__lists li {
+  padding: 10px;
+  text-align: center;
+}
+
+.tranings__item-row {
+  display: flex;
+}
+
 .headbar__top {
   display: flex;
   justify-content: space-between;

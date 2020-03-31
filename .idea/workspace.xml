@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51f3e8e0-78a4-4b3f-bd6f-f13dbbb5ee7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_body.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_main-conatiner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_light-box.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_light-box.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
@@ -68,7 +67,8 @@
       <updated>1585210708141</updated>
       <workItem from="1585210711156" duration="12187000" />
       <workItem from="1585226208346" duration="9645000" />
-      <workItem from="1585301322446" duration="7994000" />
+      <workItem from="1585301322446" duration="12170000" />
+      <workItem from="1585561619987" duration="18974000" />
     </task>
     <servers />
   </component>
@@ -102,10 +102,11 @@
       <screen x="1440" y="-548" width="1920" height="1057" />
     </state>
     <state x="2160" y="-185" width="479" height="496" key="#com.intellij.tools.ToolEditorDialog/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585217447322" />
-    <state x="1992" y="-505" key="CommitChangelistDialog2" timestamp="1585211709307">
-      <screen x="1440" y="-548" width="1920" height="1057" />
+    <state x="483" y="23" width="816" height="956" key="CommitChangelistDialog2" timestamp="1585335576969">
+      <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="1992" y="-505" key="CommitChangelistDialog2/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585211709307" />
+    <state x="483" y="23" width="816" height="956" key="CommitChangelistDialog2/0.23.1680.956@0.23.1680.956" timestamp="1585335576969" />
     <state x="1845" y="-284" width="827" height="656" key="EditFileWatcherDialog" timestamp="1585301195364">
       <screen x="1440" y="-548" width="1920" height="1057" />
     </state>
@@ -142,14 +143,16 @@
       <screen x="0" y="23" width="1440" height="808" />
     </state>
     <state x="100" y="123" width="1240" height="608" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1440.808/1440.-548.1920.1057@0.23.1440.808" timestamp="1585211391755" />
-    <state x="2188" y="-101" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585211699578">
-      <screen x="1440" y="-548" width="1920" height="1057" />
+    <state x="655" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585335481428">
+      <screen x="0" y="23" width="1680" height="956" />
     </state>
     <state x="2188" y="-101" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585211699578" />
-    <state x="1953" y="-476" width="894" height="885" key="search.everywhere.popup" timestamp="1585213670309">
+    <state x="655" y="427" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.956@0.23.1680.956" timestamp="1585335481428" />
+    <state x="1953" y="-476" width="894" height="885" key="search.everywhere.popup" timestamp="1585656824826">
       <screen x="1440" y="-548" width="1920" height="1057" />
     </state>
-    <state x="1953" y="-476" width="894" height="885" key="search.everywhere.popup/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585213670309" />
+    <state x="1953" y="-476" width="894" height="885" key="search.everywhere.popup/0.23.1440.806/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585572665898" />
     <state x="385" y="78" width="670" height="676" key="search.everywhere.popup/0.23.1440.808/1440.-548.1920.1057@0.23.1440.808" timestamp="1585211201609" />
+    <state x="1953" y="-476" width="894" height="885" key="search.everywhere.popup/0.23.1440.811/1440.-548.1920.1057@1440.-548.1920.1057" timestamp="1585656824826" />
   </component>
 </project>
