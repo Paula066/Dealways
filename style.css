@@ -2,7 +2,6 @@ body {
   background-image: url("./img/back-img.png");
   background-repeat: no-repeat;
   font-family: 'Noto Sans', sans-serif;
-  background-size: 1700px;
 }
 
 * {
@@ -13,7 +12,7 @@ body {
 
 .header__content {
   margin-top: 90px;
-  margin-bottom: 92px;
+  margin-bottom: 240px;
   color: white;
 }
 
@@ -28,6 +27,16 @@ body {
 
 .lightbox {
   background-color: #f5f5f5;
+}
+
+.lightbox .forWho {
+  display: flex;
+  background-color: white;
+  transform: translateY(-150px);
+}
+
+.lightbox .forWho__header {
+  flex: 1;
 }
 
 .lightbox .forWho__main {
@@ -47,7 +56,12 @@ body {
 
 .lightbox .forWho__box {
   text-align: center;
-  padding: 20px;
+  flex: 1;
+  padding: 15px 0;
+}
+
+.lightbox .forWho__box:not(:last-child) {
+  border-right: 1px solid #e6e6e6;
 }
 
 .lightbox .forWho__box h4 {
@@ -64,7 +78,7 @@ body {
 }
 
 .lightbox .forWho__title {
-  padding-bottom: 45px;
+  padding-bottom: 26px;
 }
 
 .lightbox .specialize__header-top {
@@ -107,8 +121,107 @@ body {
   text-align: center;
 }
 
+.tranings {
+  border-bottom: 2px solid #efefef;
+}
+
 .tranings__item-row {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 4px solid #efefef;
+  padding: 28px 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 45px;
+  margin-bottom: 15px;
+}
+
+.tranings__text {
+  display: inline-block;
+  font-size: 16px;
+  color: #262626;
+  margin-bottom: 0;
+}
+
+.tranings__cert {
+  border: 1px solid #e6232f;
+  padding: 10px 23px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 5px;
+  color: #e6232f;
+}
+
+.tranings__title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.tranings__info {
+  columns: 2;
+  list-style-type: none;
+  margin: 0;
+}
+
+.tranings__info li {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.tranings__info li::before {
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-image: url("./img/approve.png");
+}
+
+.tranings__price {
+  color: #7caf74;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.tranings__bottom button {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px 40px;
+  border: none;
+  background-image: linear-gradient(0deg, #f08136, #e6232f);
+}
+
+.tranings__more {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.tranings__more button {
+  margin-bottom: 35px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 35px;
+  border: none;
+  background-image: linear-gradient(0deg, #f08136, #e6232f);
+}
+
+.trainer__header-top {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.trainer__header-top h2 {
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .headbar__top {
