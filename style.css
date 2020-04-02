@@ -366,6 +366,70 @@ body {
   padding: 20px;
 }
 
+.consultation {
+  background-image: url("./img/test2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.consultation__box {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__box {
+  flex: 1;
+}
+
+.footer__box:last-child {
+  background-color: #f5f5f5;
+}
+
+.footer__content {
+  display: flex;
+  margin: 70px;
+}
+
+.footer__list {
+  columns: 2;
+  list-style-type: none;
+  margin-top: 48px;
+}
+
+.footer__list li {
+  padding: 4px;
+  font-size: 16px;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.footer__contact a {
+  color: black;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.footer__left {
+  flex: 1;
+}
+
+.footer__copy {
+  margin-top: 110px;
+}
+
 .headbar__top {
   display: flex;
   justify-content: space-between;

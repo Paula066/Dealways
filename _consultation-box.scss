@@ -1,0 +1,12 @@
+ .consultation {
+     background-image: url('./img/test2.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     &__box {
+         border: 1px solid;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+         color: black;
+     }
+ }
