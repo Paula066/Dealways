@@ -10,6 +10,10 @@ body {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1400px;
+}
+
 .header__content {
   margin-top: 90px;
   margin-bottom: 240px;
@@ -53,12 +57,13 @@ body {
 
 .lightbox .forWho__main h2 {
   font-size: 26px;
+  font-weight: 700;
 }
 
 .lightbox .forWho__box {
   text-align: center;
   flex: 1;
-  padding: 15px 0;
+  padding: 40px 0;
 }
 
 .lightbox .forWho__box:not(:last-child) {
@@ -124,12 +129,21 @@ body {
 .lightbox .specialization .specialize__lists {
   columns: 3;
   list-style-type: none;
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 .lightbox .specialization .specialize__lists li {
   padding: 10px;
   text-align: center;
+}
+
+.lightbox .specialization .specialize__lists li::before {
+  content: '';
+  display: inline-block;
+  width: 23px;
+  height: 11px;
+  background-repeat: no-repeat;
+  background-image: url(./img/approve.png);
 }
 
 .tranings {
@@ -140,16 +154,28 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 4px solid #efefef;
+  border: 3px solid #efefef;
   padding: 28px 0;
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 45px;
   margin-bottom: 15px;
+  position: relative;
 }
 
 .tranings__item-row--active {
   display: none;
+}
+
+.tranings__item-row::before {
+  content: '';
+  width: 15px;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: linear-gradient(0deg, #f08136, #e6232f);
 }
 
 .tranings__icon {
@@ -161,6 +187,7 @@ body {
   font-size: 16px;
   color: #262626;
   margin-bottom: 0;
+  transform: translateY(9px);
 }
 
 .tranings__cert {

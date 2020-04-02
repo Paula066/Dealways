@@ -1,11 +1,6 @@
-let numbers = [10,9,8,6];
-let newArray = numbers.map((n)=>n*10);
+const traningsButton = document.getElementById('trainings-button');
+const showMore = () => {
+    const check = traningsButton.classList.add('tranings__item-row--active');
 
-
-
-let sum = 0;
-
-
-numbers.forEach((item)=>{
-    sum += item;
-});
+}
+traningsButton.addEventListener('click', showMore);
