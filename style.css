@@ -294,6 +294,68 @@ body {
   font-size: 14px;
 }
 
+.opinion {
+  background-color: #f5f5f5;
+  margin-bottom: 100px;
+}
+
+.opinion__box {
+  padding-bottom: 80px;
+}
+
+.opinion__content {
+  background-color: white;
+  display: inline-block;
+  padding: 94px 94px 35px 94px;
+}
+
+.opinion__header {
+  margin-bottom: 34px;
+}
+
+.opinion__header h4 {
+  color: #e6232f;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.opinion__header-top {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.opinion__header-top h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.opinion__clients span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.opinion__clients span:first-child {
+  color: #e6232f;
+}
+
+.opinion__clients span:last-child {
+  color: #f39964;
+}
+
+.opinion__rewiew {
+  max-width: 400px;
+  margin-bottom: 55px;
+}
+
+.opinion__rewiew p {
+  font-style: italic;
+}
+
+.opinion__image {
+  transform: translateY(43px);
+  margin-top: -43px;
+}
+
 .headbar__top {
   display: flex;
   justify-content: space-between;
