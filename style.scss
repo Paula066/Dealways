@@ -3,7 +3,7 @@
 @import "main-header";
 @import "light-box";
 @import "white-box";
-
+@import "opinion-box";
 $font-small: 12px;
 .headbar {
     &__top {
@@ -15,12 +15,18 @@ $font-small: 12px;
         background-color: white;
     }
     &__social {
-        &-media {}
+        &-media {
+            padding-left: 20px;
+        }
         &-icon {}
     }
     &__contact {
         text-align: center;
         align-self: center;
+        padding-right: 20px;
+    }
+    &__logo {
+        padding-left: 20px;
     }
     &__link {
         font-size: $font-small;
@@ -54,6 +60,8 @@ $font-small: 12px;
     }
     &__right {
         display: flex;
+        padding-right: 20px;
+        ;
     }
     .list {
         display: flex;

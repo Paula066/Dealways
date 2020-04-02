@@ -4,6 +4,7 @@
         display: flex;
         background-color: white;
         transform: translateY(-150px);
+        margin-bottom: -150px;
         &__header {
             flex: 1;
         }
@@ -35,14 +36,18 @@
                 font-size: 14px;
             }
         }
-        &__icon-box {
-            padding-bottom: 28px;
+        &__icon {
+            &-box {
+                padding-bottom: 28px;
+                max-height: 88px;
+                padding-top: 10px;
+            }
         }
         &__title {
             padding-bottom: 26px;
         }
     }
-    .specialize {
+    .specialization {
         &__header {
             &-top {
                 padding: 65px 0;
@@ -53,31 +58,36 @@
                 }
             }
         }
-        &__box {
-            &-list {
-                border: 2px solid red;
-            }
-        }
-        &__header {
-            background-color: #f08136;
-            height: 100%;
+        .specialize {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            h3 {
-                color: white;
-                font-weight: 600;
-                font-size: 23px;
+            &__box {
+                &-list {
+                    border: 2px solid red;
+                    flex-basis: 70%;
+                }
             }
-        }
-        &__lists {
-            columns: 3;
-            list-style-type: none;
-            margin: 20px 0;
-            li {
-                padding: 10px;
-                text-align: center;
+            &__header {
+                background-color: #f08136;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                flex-basis: 30%;
+                h3 {
+                    color: white;
+                    font-weight: 600;
+                    font-size: 23px;
+                }
+            }
+            &__lists {
+                columns: 3;
+                list-style-type: none;
+                margin: 20px 0;
+                li {
+                    padding: 10px;
+                    text-align: center;
+                }
             }
         }
     }

@@ -33,6 +33,7 @@ body {
   display: flex;
   background-color: white;
   transform: translateY(-150px);
+  margin-bottom: -150px;
 }
 
 .lightbox .forWho__header {
@@ -75,48 +76,56 @@ body {
 
 .lightbox .forWho__icon-box {
   padding-bottom: 28px;
+  max-height: 88px;
+  padding-top: 10px;
 }
 
 .lightbox .forWho__title {
   padding-bottom: 26px;
 }
 
-.lightbox .specialize__header-top {
+.lightbox .specialization__header-top {
   padding: 65px 0;
 }
 
-.lightbox .specialize__header-top h2 {
+.lightbox .specialization__header-top h2 {
   font-size: 28px;
   font-weight: 600;
   text-align: center;
 }
 
-.lightbox .specialize__box-list {
-  border: 2px solid red;
+.lightbox .specialization .specialize {
+  display: flex;
 }
 
-.lightbox .specialize__header {
+.lightbox .specialization .specialize__box-list {
+  border: 2px solid red;
+  flex-basis: 70%;
+}
+
+.lightbox .specialization .specialize__header {
   background-color: #f08136;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  flex-basis: 30%;
 }
 
-.lightbox .specialize__header h3 {
+.lightbox .specialization .specialize__header h3 {
   color: white;
   font-weight: 600;
   font-size: 23px;
 }
 
-.lightbox .specialize__lists {
+.lightbox .specialization .specialize__lists {
   columns: 3;
   list-style-type: none;
   margin: 20px 0;
 }
 
-.lightbox .specialize__lists li {
+.lightbox .specialization .specialize__lists li {
   padding: 10px;
   text-align: center;
 }
@@ -137,6 +146,14 @@ body {
   margin-bottom: 15px;
 }
 
+.tranings__item-row--active {
+  display: none;
+}
+
+.tranings__icon {
+  min-height: 78px;
+}
+
 .tranings__text {
   display: inline-block;
   font-size: 16px;
@@ -146,7 +163,7 @@ body {
 
 .tranings__cert {
   border: 1px solid #e6232f;
-  padding: 10px 23px;
+  padding: 9px 17px;
   border-radius: 6px;
   text-transform: uppercase;
   font-size: 10px;
@@ -158,7 +175,7 @@ body {
 .tranings__title {
   font-size: 22px;
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 14px;
 }
 
 .tranings__info {
@@ -168,7 +185,7 @@ body {
 }
 
 .tranings__info li {
-  padding: 10px;
+  padding: 5px;
   font-size: 16px;
 }
 
@@ -185,6 +202,7 @@ body {
   color: #7caf74;
   font-weight: 600;
   font-size: 23px;
+  margin-bottom: 0;
 }
 
 .tranings__bottom button {
@@ -224,6 +242,58 @@ body {
   font-weight: 600;
 }
 
+.trainer__box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.trainer__box--row {
+  flex-direction: row-reverse;
+}
+
+.trainer__photo-top {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.trainer__photo-top img {
+  max-height: 400px;
+}
+
+.trainer__descr {
+  border: 1px solid red;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mission__box-top {
+  display: flex;
+}
+
+.mission__square {
+  margin: 25px;
+  flex: 1;
+}
+
+.mission__icon {
+  margin-bottom: 30px;
+}
+
+.mission__text {
+  margin-bottom: 35px;
+}
+
+.mission__text h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.mission__desc {
+  font-size: 14px;
+}
+
 .headbar__top {
   display: flex;
   justify-content: space-between;
@@ -233,9 +303,18 @@ body {
   background-color: white;
 }
 
+.headbar__social-media {
+  padding-left: 20px;
+}
+
 .headbar__contact {
   text-align: center;
   align-self: center;
+  padding-right: 20px;
+}
+
+.headbar__logo {
+  padding-left: 20px;
 }
 
 .headbar__link {
@@ -274,6 +353,7 @@ body {
 
 .headbar__right {
   display: flex;
+  padding-right: 20px;
 }
 
 .headbar .list {
