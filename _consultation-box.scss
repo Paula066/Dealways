@@ -1,12 +1,38 @@
- .consultation {
-     background-image: url('./img/test2.png');
-     background-repeat: no-repeat;
-     background-size: cover;
-     &__box {
-         border: 1px solid;
-         display: flex;
-         align-items: center;
-         justify-content: space-around;
-         color: black;
-     }
- }
+.consultation {
+    background-image: url('./img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    &__box {
+        border: 1px solid;
+        display: flex;
+        align-items: center;
+        color: black;
+        color: white;
+    }
+    &__header {
+        h3 {
+            font-weight: 600;
+            color: white;
+        }
+    }
+    &__contact {
+        a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 700;
+            border: 1px solid;
+            border-radius: 1px;
+            padding: 18px 44px;
+            background-image: linear-gradient(90deg, #e6232f, #f08136, #e6232f);
+        }
+    }
+    &__price {
+        p {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+}

@@ -62,8 +62,11 @@
             display: flex;
             &__box {
                 &-list {
-                    border: 2px solid red;
-                    flex-basis: 70%;
+                    border: 3px solid red;
+                    flex-grow: 1;
+                    margin-top: 18px;
+                    margin-left: -29px;
+                    margin-bottom: 18px;
                 }
             }
             &__header {
@@ -72,8 +75,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                padding: 20px;
-                flex-basis: 30%;
+                padding: 100px 40px;
                 h3 {
                     color: white;
                     font-weight: 600;

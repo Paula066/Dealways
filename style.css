@@ -99,8 +99,11 @@ body {
 }
 
 .lightbox .specialization .specialize__box-list {
-  border: 2px solid red;
-  flex-basis: 70%;
+  border: 3px solid red;
+  flex-grow: 1;
+  margin-top: 18px;
+  margin-left: -29px;
+  margin-bottom: 18px;
 }
 
 .lightbox .specialization .specialize__header {
@@ -109,8 +112,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  flex-basis: 30%;
+  padding: 100px 40px;
 }
 
 .lightbox .specialization .specialize__header h3 {
@@ -367,17 +369,40 @@ body {
 }
 
 .consultation {
-  background-image: url("./img/test2.png");
+  background-image: url("./img/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  padding: 60px 0;
 }
 
 .consultation__box {
   border: 1px solid;
   display: flex;
   align-items: center;
-  justify-content: space-around;
   color: black;
+  color: white;
+}
+
+.consultation__header h3 {
+  font-weight: 600;
+  color: white;
+}
+
+.consultation__contact a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid;
+  border-radius: 1px;
+  padding: 18px 44px;
+  background-image: linear-gradient(90deg, #e6232f, #f08136, #e6232f);
+}
+
+.consultation__price p {
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .footer {
@@ -428,6 +453,37 @@ body {
 
 .footer__copy {
   margin-top: 110px;
+}
+
+.footer__header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.footer__header h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.footer__form {
+  margin: 30px;
+}
+
+.footer__ico::before {
+  content: '';
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 14px;
+  display: inline-block;
+}
+
+.footer__ico--mail::before {
+  background-image: url("./img/ico-mail.png");
+  transform: translateY(3px);
+}
+
+.footer__ico--phone::before {
+  background-image: url("./img/ico-phone.png");
 }
 
 .headbar__top {

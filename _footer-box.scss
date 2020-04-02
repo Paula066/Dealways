@@ -37,12 +37,35 @@
     &__copy {
         margin-top: 110px;
     }
-}
-
-&__header {
-    h4 {
+    &__header {
         text-align: center;
-        font-size: 28px;
-        font-weight: 600;
+        margin-top: 50px;
+        h4 {
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+    &__form {
+        margin: 30px;
+    }
+    &__ico {
+        &::before {
+            content: '';
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 14px;
+            display: inline-block;
+        }
+        &--mail {
+            &::before {
+                background-image: url('./img/ico-mail.png');
+                transform: translateY(3px);
+            }
+        }
+        &--phone {
+            &::before {
+                background-image: url('./img/ico-phone.png');
+            }
+        }
     }
 }
