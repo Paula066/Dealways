@@ -1,3 +1,11 @@
 .partners {
-    background-color: yellow;
+    &__logo {
+        border: 1px solid #ededed;
+        display: flex;
+        justify-content: space-around;
+        a {
+            padding: 20px;
+        }
+        margin-bottom: 96px;
+    }
 }
