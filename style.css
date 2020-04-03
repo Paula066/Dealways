@@ -113,27 +113,26 @@ body {
 
 .lightbox .specialization .specialize__header {
   background-color: #f08136;
-  height: 100%;
+  flex-basis: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 40px;
 }
 
 .lightbox .specialization .specialize__header h3 {
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 23px;
 }
 
 .lightbox .specialization .specialize__lists {
   columns: 3;
   list-style-type: none;
-  margin: 30px 0;
+  margin: 48px 0;
 }
 
 .lightbox .specialization .specialize__lists li {
-  padding: 10px;
+  padding: 14px;
   text-align: center;
 }
 
@@ -169,13 +168,12 @@ body {
 
 .tranings__item-row::before {
   content: '';
-  width: 15px;
+  width: 17px;
   height: 100%;
-  background-color: red;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: linear-gradient(0deg, #f08136, #e6232f);
+  background-image: linear-gradient(60deg, #f08136, #e6232f);
 }
 
 .tranings__icon {
@@ -192,7 +190,7 @@ body {
 
 .tranings__cert {
   border: 1px solid #e6232f;
-  padding: 9px 17px;
+  padding: 7px 17px;
   border-radius: 6px;
   text-transform: uppercase;
   font-size: 10px;
@@ -204,7 +202,7 @@ body {
 .tranings__title {
   font-size: 22px;
   font-weight: 600;
-  margin-top: 14px;
+  margin-top: 9px;
 }
 
 .tranings__info {
@@ -466,6 +464,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 60px;
+  margin-top: 8px;
 }
 
 .footer__contact a {
@@ -518,7 +517,7 @@ body {
   justify-content: space-between;
   padding-bottom: 5px;
   padding-top: 5px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #efefef;
   background-color: white;
 }
 
