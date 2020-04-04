@@ -1,11 +1,45 @@
 .partners {
     &__logo {
-        border: 1px solid #ededed;
         display: flex;
-        justify-content: space-around;
-        a {
-            padding: 20px;
-        }
+        justify-content: center;
         margin-bottom: 96px;
+        position: relative;
+        a {
+            padding: 20px 50px;
+        }
+    }
+    .circle {
+        position: absolute;
+        border-radius: 50%;
+        background-image: linear-gradient(60deg, #f08136, #e6232f);
+        width: 43px;
+        height: 43px;
+        p {
+            position: absolute;
+            top: 10px;
+            left: 14px;
+            i {
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                display: inline-block;
+                padding: 5px;
+                &.left {
+                    transform: rotate(135deg);
+                    -webkit-transform: rotate(135deg);
+                }
+                &.right {
+                    transform: rotate(-45deg);
+                    -webkit-transform: rotate(-45deg);
+                }
+            }
+        }
+        &--left {
+            top: 25%;
+            left: 0;
+        }
+        &--right {
+            top: 25%;
+            right: 0;
+        }
     }
 }

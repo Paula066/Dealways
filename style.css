@@ -421,14 +421,55 @@ body {
 }
 
 .partners__logo {
-  border: 1px solid #ededed;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin-bottom: 96px;
+  position: relative;
 }
 
 .partners__logo a {
-  padding: 20px;
+  padding: 20px 50px;
+}
+
+.partners .circle {
+  position: absolute;
+  border-radius: 50%;
+  background-image: linear-gradient(60deg, #f08136, #e6232f);
+  width: 43px;
+  height: 43px;
+}
+
+.partners .circle p {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+}
+
+.partners .circle p i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.partners .circle p i.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.partners .circle p i.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.partners .circle--left {
+  top: 25%;
+  left: 0;
+}
+
+.partners .circle--right {
+  top: 25%;
+  right: 0;
 }
 
 .consultation {
