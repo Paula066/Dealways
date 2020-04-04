@@ -135,6 +135,7 @@ body {
 .lightbox .specialization .specialize__lists li {
   padding: 14px;
   text-align: center;
+  font-size: 17px;
 }
 
 .lightbox .specialization .specialize__lists li::before {
