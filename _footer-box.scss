@@ -70,15 +70,19 @@
     &__form {
         display: flex;
         margin-bottom: 20px;
+        justify-content: space-between;
     }
     &__main {
         margin-left: 95px;
+        max-width: 80%;
     }
     &__label {
         &-box {
             align-self: center;
             font-size: 14px;
             flex-basis: 20%;
+            display: flex;
+            justify-content: flex-end;
         }
     }
     &__input {
@@ -98,5 +102,12 @@
     &__button {
         display: flex;
         justify-content: flex-end;
+    }
+    &__btn {
+        padding: 18px 35px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        background-image: linear-gradient(90deg, #e6232f, #f08136, #e6232f);
     }
 }
