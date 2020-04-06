@@ -623,6 +623,7 @@ body {
 .form {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .hide {
