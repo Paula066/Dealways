@@ -620,6 +620,10 @@ body {
   background-image: linear-gradient(90deg, #e6232f, #f08136, #e6232f);
 }
 
+.form {
+  display: flex;
+}
+
 .hide {
   display: none;
   visibility: hidden;
