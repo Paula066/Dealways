@@ -1,7 +1,6 @@
-const traningsButton = document.getElementById('trainings-button');
-const btn = document.querySelectorAll('.tranings__item-row');
-const showMore = () => {
-    const active = document.querySelectorAll('.tranings__item-row');
-
+const addElement = (e) => {
+    e.preventDefault();
+    console.log('klik');
 }
-traningsButton.addEventListener('click', showMore);
+const addForm = document.querySelector('.footer__container');
+addForm.addEventListener('submit', addElement)

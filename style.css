@@ -579,16 +579,6 @@ body {
   margin-top: 110px;
 }
 
-.footer__header {
-  text-align: center;
-  margin: 50px 0;
-}
-
-.footer__header h4 {
-  font-size: 28px;
-  font-weight: 600;
-}
-
 .footer__ico::before {
   content: '';
   background-repeat: no-repeat;
@@ -606,38 +596,10 @@ body {
   background-image: url("./img/ico-phone.png");
 }
 
-.footer__form {
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: space-between;
-}
-
-.footer__main {
+.footer__container {
   margin-left: 95px;
   max-width: 80%;
-}
-
-.footer__label-box {
-  align-self: center;
-  font-size: 14px;
-  flex-basis: 20%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.footer__input-box {
-  width: 70%;
-}
-
-.footer__name {
-  width: 100%;
-  height: 50px;
-  padding-left: 10px;
-  font-size: 18px;
-}
-
-.footer__name--text {
-  height: 120px;
+  margin-bottom: 35px;
 }
 
 .footer__button {
@@ -650,7 +612,13 @@ body {
   text-transform: uppercase;
   color: white;
   font-weight: 700;
+  font-size: 16px;
   background-image: linear-gradient(90deg, #e6232f, #f08136, #e6232f);
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
 }
 
 .headbar__top {

@@ -227,7 +227,7 @@
                         <button>szczegóły</button>
                     </div>
                 </div>
-                <div class="tranings__item-row ">
+                <div class="tranings__item-row hide">
                     <div class="tranings__icon-box">
                         <img class="tranings__icon" src="./img/house.png">
                     </div>
@@ -247,7 +247,7 @@
                         <button>szczegóły</button>
                     </div>
                 </div>
-                <div class="tranings__item-row ">
+                <div class="tranings__item-row hide">
                     <div class="tranings__icon-box">
                         <img class="tranings__icon" src="./img/house.png">
                     </div>
@@ -267,7 +267,7 @@
                         <button>szczegóły</button>
                     </div>
                 </div>
-                <div class="tranings__item-row ">
+                <div class="tranings__item-row hide">
                     <div class="tranings__icon-box">
                         <img class="tranings__icon" src="./img/house.png">
                     </div>
@@ -547,46 +547,15 @@
             </div>
         </div>
         <div class="footer__box">
-            <div class="footer__main">
-                <div class="footer__header">
-                    <h4>Skontaktuj się</h4>
-                </div>
-                <div class="footer__form">
-                    <div class="footer__label-box">
-                        <label for="fname">Imie i nazwisko</label>
-                    </div>
-                    <div class="footer__input-box">
-                        <input type="text" id="fname" name="firstname" class="footer__name">
-                    </div>
-                </div>
-                <div class="footer__form">
-                    <div class="footer__label-box">
-                        <label for="fname">Telefon</label>
-                    </div>
-                    <div class="footer__input-box">
-                        <input type="text" id="fname" name="firstname" class="footer__name">
-                    </div>
-                </div>
-                <div class="footer__form">
-                    <div class="footer__label-box">
-                        <label for="fname">Email address</label>
-                    </div>
-                    <div class="footer__input-box">
-                        <input type="text" id="fname" name="firstname" class="footer__name">
-                    </div>
-                </div>
-                <div class="footer__form">
-                    <div class="footer__label-box">
-                        <label for="fname">Treść</label>
-                    </div>
-                    <div class="footer__input-box">
-                        <input type="text" id="fname" name="firstname" class="footer__name footer__name--text">
-                    </div>
-                </div>
-                <div class="footer__button">
-                    <button class="footer__btn">wyslij</button>
-                </div>
-            </div>
+            <form class="form">
+                <h3 class="form__title">Skontaktuj się z nami</h3>
+                <input type="text" name="firstname" class="form__input" required>
+                <input type="text" name="" class="form__input" required>
+                <input type="text" name="" class="form__input" required>
+                <input type="text" name="" class="form__input" required>
+                <button class="form__button">wyślij</button>
+            </form>
+
 
         </div>
     </footer>

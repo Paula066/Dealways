@@ -8,6 +8,11 @@
 @import "consultation-box";
 @import "footer-box";
 $font-small: 12px;
+.hide {
+    display: none;
+    visibility: hidden;
+}
+
 // $main-color: 
 // $default-font
 // $special-font
