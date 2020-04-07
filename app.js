@@ -1,6 +1,15 @@
-const addElement = (e) => {
+const addForm = document.querySelector('.form');
+
+const addElement = (e, node, txt, attribute, value) => {
     e.preventDefault();
     console.log('klik');
+
+    const element = document.createElement(node);
+    const text = document.createTextNode(txt);
+    element.appendChild(text);
+
+    element.attribute
+
+
 }
-const addForm = document.querySelector('.footer__container');
 addForm.addEventListener('submit', addElement)
