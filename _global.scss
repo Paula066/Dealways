@@ -8,6 +8,9 @@
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
+    @media (max-width: 1380px) {
+        width: 920px;
+    }
 }
