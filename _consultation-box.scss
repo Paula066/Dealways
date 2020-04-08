@@ -18,6 +18,9 @@
         padding: 45px 30px;
         flex-basis: 60%;
         justify-content: space-between;
+        @media (max-width: $large) {
+            flex-basis: 100%;
+        }
     }
     &__header {
         display: flex;

@@ -7,10 +7,15 @@
     }
 }
 
+$extra-small: 550px;
+$small: 790px;
+$medium: 950px;
+$large: 1380px;
 .container {
     max-width: 1300px;
     margin: 0 auto;
-    @media (max-width: 1380px) {
-        width: 920px;
+    width: 100%;
+    @media (max-width: $large) {
+        width: 950px;
     }
 }
