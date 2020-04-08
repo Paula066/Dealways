@@ -141,6 +141,10 @@
             img {
                 max-height: 450px;
                 min-height: 450px;
+                @media (max-width: $large) {
+                    max-height: 316px;
+                    min-height: 316px;
+                }
             }
         }
     }

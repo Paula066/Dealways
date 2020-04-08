@@ -84,6 +84,10 @@
     margin-bottom: 23px;
     margin-top: 48px;
     margin-right: 130px;
+    @media (max-width: $large) {
+        margin-right: 0;
+        padding: 0;
+    }
     &__title {
         flex-basis: 100%;
         text-align: center;
