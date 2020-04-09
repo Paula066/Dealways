@@ -6,6 +6,9 @@
         position: relative;
         a {
             padding: 20px 50px;
+            @include s {
+                padding: 0 25px;
+            }
         }
     }
     .circle {
@@ -14,6 +17,7 @@
         background-image: linear-gradient(60deg, #f08136, #e6232f);
         width: 43px;
         height: 43px;
+        display: none;
         p {
             position: absolute;
             top: 10px;

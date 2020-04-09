@@ -7,6 +7,10 @@
         background-color: white;
         display: inline-block;
         padding: 94px 94px 35px 94px;
+        @include s {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
     }
     &__header {
         margin-bottom: 34px;
@@ -18,9 +22,9 @@
         &-top {
             text-align: center;
             padding: 60px 0;
-            // @media (max-width: $large) {
-            //     padding: 35px 0;
-            // }
+            @include lg {
+                padding: 35px 0;
+            }
             h2 {
                 font-size: 28px;
                 font-weight: 700;

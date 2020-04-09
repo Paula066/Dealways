@@ -21,6 +21,9 @@
             margin-top: 20px;
             margin-left: 10px;
         }
+        @include xs {
+            flex-wrap: wrap;
+        }
     }
     &__list {
         columns: 2;
@@ -56,6 +59,14 @@
         @include lg {
             margin-left: 20px;
         }
+        @include md {
+            flex: none;
+            margin-right: 45px;
+        }
+        @include xs {
+            margin-left: 0;
+            flex-basis: 100%;
+        }
     }
     &__right {
         @include lg {
@@ -66,6 +77,9 @@
         margin-top: 110px;
         @include lg {
             margin-top: 85px;
+        }
+        @include xs {
+            margin-top: 60px;
         }
     }
     &__ico {
@@ -112,6 +126,9 @@
         @include md {
             max-width: 300px;
         }
+        @include xs {
+            max-width: 190px;
+        }
         img {
             @include lg {
                 width: 100%;
@@ -147,6 +164,10 @@
         @include md {
             padding: 5px 5px 5px 10px;
         }
+        @include xs {
+            flex-wrap: wrap;
+            margin: 0;
+        }
     }
     &__label {
         flex-basis: 30%;
@@ -154,6 +175,10 @@
         padding: 10px 20px;
         @include lg {
             padding: 10px 10px;
+        }
+        @include xs {
+            text-align: left;
+            flex-basis: 100%;
         }
     }
     &__input {
@@ -163,6 +188,9 @@
         padding-left: 10px;
         padding-top: 10px;
         border: none;
+        @include xs {
+            flex-basis: 100%;
+        }
         &--text {
             height: 135px;
             overflow: auto;
@@ -181,5 +209,8 @@
         font-weight: 700;
         font-size: 16px;
         outline: none;
+        @include xs {
+            padding: 12px 26px;
+        }
     }
 }

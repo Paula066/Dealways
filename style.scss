@@ -18,11 +18,12 @@ $font-small: 12px;
 // $special-font
 // warto dodac do html font size-10px a pozniej modyfikowac ją za pomocą 2 rem czyli 20px
 .headbar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+    position: sticky;
+    top: -44px;
     z-index: 500;
+    @include xs {
+        top: -55px;
+    }
     &__top {
         display: flex;
         justify-content: space-between;
@@ -34,6 +35,9 @@ $font-small: 12px;
     &__social {
         &-media {
             padding-left: 20px;
+            @include xs {
+                display: flex;
+            }
         }
         &-icon {}
     }
@@ -41,6 +45,11 @@ $font-small: 12px;
         text-align: center;
         align-self: center;
         padding-right: 20px;
+        @include xs {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
     }
     &__logo {
         padding-left: 20px;
@@ -65,6 +74,9 @@ $font-small: 12px;
         }
         &--email {
             margin: 30px;
+            @include xs {
+                margin: 0 0 6px 0;
+            }
             &::before {
                 background-image: url("./img/ico-mail.png");
             }
@@ -103,6 +115,9 @@ $font-small: 12px;
             list-style-type: none;
             padding-right: 15px;
             flex: 1;
+            @include s {
+                display: none;
+            }
         }
         &__text {
             color: black;
