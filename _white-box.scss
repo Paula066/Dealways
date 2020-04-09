@@ -32,13 +32,29 @@
             min-height: 55px;
             padding-left: 20px;
         }
+        @include md {
+            min-height: 40px;
+            min-width: 20px;
+            max-height: 24px;
+        }
     }
     &__title {
+        max-width: 329px;
+        @include lg {
+            max-width: 232px;
+        }
+        @include md {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
         &-box {
             @include lg {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            @include md {
+                flex-basis: 85%;
             }
         }
     }
@@ -52,6 +68,9 @@
             margin-bottom: 4px;
         }
     }
+    &__certBox {
+        margin: 0 10px;
+    }
     &__cert {
         border: 1px solid #e6232f;
         padding: 7px 17px;
@@ -59,18 +78,20 @@
         text-transform: uppercase;
         font-size: 10px;
         font-weight: 600;
-        margin-left: 5px;
         color: #e6232f;
         @include lg {
             margin: 7px 0;
         }
+    }
+    &__split {
+        display: flex;
     }
     &__title {
         font-size: 22px;
         font-weight: 600;
         margin-top: 9px;
         @include lg {
-            margin-top: 0;
+            margin-top: 7;
         }
     }
     &__info {

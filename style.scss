@@ -18,10 +18,8 @@ $font-small: 12px;
 // $special-font
 // warto dodac do html font size-10px a pozniej modyfikowac ją za pomocą 2 rem czyli 20px
 .headbar {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
+    position: sticky;
+    top: -44px;
     z-index: 500;
     &__top {
         display: flex;
