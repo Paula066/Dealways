@@ -22,7 +22,7 @@ $font-small: 12px;
     top: -44px;
     z-index: 500;
     @include xs {
-        top: -55px;
+        top: -50px;
     }
     &__top {
         display: flex;
@@ -97,6 +97,10 @@ $font-small: 12px;
         @include md {
             padding-top: 0;
             padding-bottom: 0;
+        }
+        @include s {
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
     }
     &__right {
