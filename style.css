@@ -34,13 +34,19 @@ body {
 
 @media (max-width: 1320px) {
   .container {
-    width: 990px;
+    max-width: 990px;
   }
 }
 
 @media (max-width: 995px) {
   .container {
-    width: 770px;
+    max-width: 770px;
+  }
+}
+
+@media (max-width: 790px) {
+  .container {
+    max-width: 585px;
   }
 }
 
@@ -117,6 +123,13 @@ body {
 @media (max-width: 995px) {
   .lightbox .forWho__box {
     padding: 25px 17px;
+  }
+}
+
+@media (max-width: 790px) {
+  .lightbox .forWho__box {
+    flex-basis: 40%;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -239,6 +252,12 @@ body {
 @media (max-width: 1320px) {
   .lightbox .specialization .specialize__lists {
     margin: 36px 0;
+  }
+}
+
+@media (max-width: 790px) {
+  .lightbox .specialization .specialize__lists {
+    columns: 2;
   }
 }
 
@@ -477,13 +496,31 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 995px) {
+  .trainer__name h3 {
+    font-size: 23px;
+  }
+}
+
 .trainer__content p {
   font-size: 18px;
+}
+
+@media (max-width: 995px) {
+  .trainer__content p {
+    font-size: 17px;
+  }
 }
 
 .trainer__box {
   display: flex;
   margin-bottom: 30px;
+}
+
+@media (max-width: 790px) {
+  .trainer__box {
+    flex-wrap: wrap;
+  }
 }
 
 .trainer__box--row {
@@ -493,6 +530,13 @@ body {
 .trainer__photo-top {
   display: inline-block;
   vertical-align: top;
+  flex: 1;
+}
+
+@media (max-width: 790px) {
+  .trainer__photo-top {
+    flex-basis: 100%;
+  }
 }
 
 .trainer__photo-top img {
@@ -507,6 +551,13 @@ body {
   }
 }
 
+@media (max-width: 995px) {
+  .trainer__photo-top img {
+    width: 100%;
+    min-height: 100%;
+  }
+}
+
 .trainer__descr {
   border: 5px solid #e6232f;
   margin-left: -80px;
@@ -518,6 +569,13 @@ body {
 @media (max-width: 1320px) {
   .trainer__descr {
     margin-left: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 790px) {
+  .trainer__descr {
+    max-width: 100%;
   }
 }
 
@@ -582,9 +640,21 @@ body {
   display: flex;
 }
 
+@media (max-width: 790px) {
+  .mission__box-top {
+    flex-wrap: wrap;
+  }
+}
+
 .mission__square {
   margin: 25px;
   flex: 1;
+}
+
+@media (max-width: 790px) {
+  .mission__square {
+    flex-basis: 40%;
+  }
 }
 
 .mission__icon {
@@ -686,6 +756,12 @@ body {
 
 .partners__logo a {
   padding: 20px 50px;
+}
+
+@media (max-width: 790px) {
+  .partners__logo {
+    padding: 0 25px;
+  }
 }
 
 .partners .circle {
@@ -897,6 +973,13 @@ body {
 @media (max-width: 1320px) {
   .footer__left {
     margin-left: 20px;
+  }
+}
+
+@media (max-width: 995px) {
+  .footer__left {
+    flex: none;
+    margin-right: 45px;
   }
 }
 

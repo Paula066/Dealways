@@ -38,6 +38,10 @@
             @include md {
                 padding: 25px 17px;
             }
+            @include s {
+                flex-basis: 40%;
+                border-bottom: 1px solid #e6e6e6;
+            }
             &:not(:last-child) {
                 border-right: 1px solid #e6e6e6;
             }
@@ -127,6 +131,9 @@
                 margin: 48px 0;
                 @include lg {
                     margin: 36px 0;
+                }
+                @include s {
+                    columns: 2;
                 }
                 li {
                     padding: 14px;

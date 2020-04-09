@@ -7,6 +7,9 @@
         a {
             padding: 20px 50px;
         }
+        @include s {
+            padding: 0 25px;
+        }
     }
     .circle {
         position: absolute;

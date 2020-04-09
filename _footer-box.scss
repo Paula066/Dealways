@@ -56,6 +56,10 @@
         @include lg {
             margin-left: 20px;
         }
+        @include md {
+            flex: none;
+            margin-right: 45px;
+        }
     }
     &__right {
         @include lg {

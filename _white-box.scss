@@ -171,16 +171,25 @@
         h3 {
             font-size: 24px;
             font-weight: 700;
+            @include md {
+                font-size: 23px;
+            }
         }
     }
     &__content {
         p {
             font-size: 18px;
+            @include md {
+                font-size: 17px;
+            }
         }
     }
     &__box {
         display: flex;
         margin-bottom: 30px;
+        @include s {
+            flex-wrap: wrap;
+        }
         &--row {
             flex-direction: row-reverse;
         }
@@ -189,12 +198,20 @@
         &-top {
             display: inline-block;
             vertical-align: top;
+            flex: 1;
+            @include s {
+                flex-basis: 100%;
+            }
             img {
                 max-height: 450px;
                 min-height: 450px;
                 @include lg {
                     max-height: 316px;
                     min-height: 316px;
+                }
+                @include md {
+                    width: 100%;
+                    min-height: 100%;
                 }
             }
         }
@@ -207,6 +224,10 @@
         max-width: 50%;
         @include lg {
             margin-left: 0;
+            padding-bottom: 20px;
+        }
+        @include s {
+            max-width: 100%;
         }
         &:last-child {
             margin-right: -80px;
@@ -259,11 +280,17 @@
     &__box {
         &-top {
             display: flex;
+            @include s {
+                flex-wrap: wrap;
+            }
         }
     }
     &__square {
         margin: 25px;
         flex: 1;
+        @include s {
+            flex-basis: 40%;
+        }
     }
     &__icon {
         margin-bottom: 30px;
