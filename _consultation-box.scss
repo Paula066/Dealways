@@ -4,6 +4,9 @@
     background-size: cover;
     background-position: center;
     padding: 60px 0;
+    @include lg {
+        padding: 0;
+    }
     &__main {
         display: flex;
         justify-content: center;
@@ -18,8 +21,9 @@
         padding: 45px 30px;
         flex-basis: 60%;
         justify-content: space-between;
-        @media (max-width: $large) {
+        @include lg {
             flex-basis: 100%;
+            padding-top: 20px;
         }
     }
     &__header {
@@ -37,6 +41,10 @@
             color: white;
             font-size: 28px;
             padding-bottom: 20px;
+            @include lg {
+                padding-top: 30px;
+                padding-bottom: 0;
+            }
         }
     }
     &__contact {

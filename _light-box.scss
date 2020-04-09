@@ -5,12 +5,12 @@
         background-color: white;
         transform: translateY(-150px);
         margin-bottom: -150px;
-        @media (max-width: $medium) {
+        @include md {
             flex-wrap: wrap;
         }
         &__header {
             flex: 1;
-            @media (max-width: $medium) {
+            @include md {
                 flex-basis: 100%;
             }
         }
@@ -26,7 +26,7 @@
             h2 {
                 font-size: 26px;
                 font-weight: 700;
-                @media(max-width: $large) {
+                @include lg {
                     font-size: 24px;
                 }
             }
@@ -35,8 +35,8 @@
             text-align: center;
             flex: 1;
             padding: 40px 0;
-            @media (max-width: $large) {
-                padding: 30px 20px;
+            @include md {
+                padding: 25px 17px;
             }
             &:not(:last-child) {
                 border-right: 1px solid #e6e6e6;
@@ -54,14 +54,14 @@
                 padding-bottom: 28px;
                 max-height: 88px;
                 padding-top: 10px;
-                @media(max-width: $large) {
+                @include lg {
                     padding-top: 0;
                 }
             }
         }
         &__title {
             padding-bottom: 26px;
-            @media (max-width: $medium) {
+            @include md {
                 padding-bottom: 22px;
             }
         }
@@ -70,14 +70,14 @@
         &__header {
             &-top {
                 padding: 60px 0;
-                @media(max-width: $large) {
+                @include lg {
                     padding: 35px 0;
                 }
                 h2 {
                     font-size: 28px;
                     font-weight: 600;
                     text-align: center;
-                    @media(max-width: $medium) {
+                    @include md {
                         font-size: 25px;
                     }
                 }
@@ -85,7 +85,7 @@
         }
         .specialize {
             display: flex;
-            @media(max-width: $medium) {
+            @include md {
                 flex-wrap: wrap;
             }
             &__box {
@@ -95,10 +95,10 @@
                     margin-top: 18px;
                     margin-left: -29px;
                     margin-bottom: 18px;
-                    @media(max-width: $large) {
+                    @include lg {
                         margin-left: -17px;
                     }
-                    @media(max-width: $medium) {
+                    @include md {
                         margin-top: 0px;
                         margin-left: 0px;
                         margin-bottom: 0px;
@@ -111,7 +111,7 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @media(max-width: $medium) {
+                @include md {
                     flex-basis: 100%;
                     padding: 20px 0;
                 }
@@ -125,7 +125,7 @@
                 columns: 3;
                 list-style-type: none;
                 margin: 48px 0;
-                @media (max-width: $large) {
+                @include lg {
                     margin: 36px 0;
                 }
                 li {
