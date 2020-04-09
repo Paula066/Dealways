@@ -7,7 +7,7 @@ window.addEventListener('scroll', () => {
     } else {
         headbarContainer.classList.add('full', 'shadow')
     }
-    if (headbarTop !== -55 && headbarTop !== -44) {
+    if (headbarTop !== -50 && headbarTop !== -44) {
         headbarContainer.classList.remove('full', 'shadow')
     } else {
         headbarContainer.classList.add('full', 'shadow')
