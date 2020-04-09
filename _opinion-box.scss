@@ -18,9 +18,9 @@
         &-top {
             text-align: center;
             padding: 60px 0;
-            @media (max-width: $large) {
-                padding: 35px 0;
-            }
+            // @media (max-width: $large) {
+            //     padding: 35px 0;
+            // }
             h2 {
                 font-size: 28px;
                 font-weight: 700;
@@ -42,9 +42,9 @@
     &__rewiew {
         max-width: 400px;
         margin-bottom: 55px;
-        @media (max-width: $large) {
-            margin-bottom: 40px;
-        }
+        // @media (max-width: $large) {
+        //     margin-bottom: 40px;
+        // }
         p {
             font-style: italic;
         }

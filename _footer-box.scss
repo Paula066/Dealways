@@ -1,6 +1,10 @@
 .footer {
     display: flex;
     justify-content: space-around;
+    @include md {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
     &__box {
         flex: 1;
         &:last-child {
@@ -10,17 +14,24 @@
     &__content {
         display: flex;
         margin: 70px;
-        @media(max-width: $large) {
+        @include lg {
             margin: 100px 0;
+        }
+        @include md {
+            margin-top: 20px;
+            margin-left: 10px;
         }
     }
     &__list {
         columns: 2;
         list-style-type: none;
         margin-top: 48px;
-        @media(max-width: $large) {
+        @include lg {
             columns: 1;
             margin-top: 29px;
+        }
+        @include md {
+            columns: 2;
         }
         li {
             padding: 4px;
@@ -42,18 +53,18 @@
     }
     &__left {
         flex: 1;
-        @media(max-width: $large) {
+        @include lg {
             margin-left: 20px;
         }
     }
     &__right {
-        @media(max-width: $large) {
+        @include lg {
             padding-right: 10px;
         }
     }
     &__copy {
         margin-top: 110px;
-        @media(max-width: $large) {
+        @include lg {
             margin-top: 85px;
         }
     }
@@ -95,11 +106,14 @@
         background-image: linear-gradient(90deg, #e6232f, #f08136, #e6232f);
     }
     &__logo {
-        @media(max-width: $large) {
+        @include lg {
             max-width: 225px;
         }
+        @include md {
+            max-width: 300px;
+        }
         img {
-            @media(max-width: $large) {
+            @include lg {
                 width: 100%;
             }
         }
@@ -112,7 +126,7 @@
     margin-bottom: 23px;
     margin-top: 48px;
     margin-right: 130px;
-    @media (max-width: $large) {
+    @include lg {
         margin-right: 15px;
     }
     &__title {
@@ -121,7 +135,7 @@
         margin-bottom: 48px;
         font-weight: 700;
         font-size: 28px;
-        @media(max-width: $large) {
+        @include lg {
             margin-bottom: 31px;
         }
     }
@@ -130,12 +144,15 @@
         justify-content: space-between;
         flex-basis: 100%;
         padding: 5px 0 5px 10px;
+        @include md {
+            padding: 5px 5px 5px 10px;
+        }
     }
     &__label {
         flex-basis: 30%;
         text-align: right;
         padding: 10px 20px;
-        @media(max-width: $large) {
+        @include lg {
             padding: 10px 10px;
         }
     }

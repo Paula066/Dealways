@@ -7,18 +7,41 @@
     }
 }
 
-$extra-small: 550px;
-$small: 790px;
-$medium: 950px;
-$large: 1380px;
+@mixin xs {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin s {
+    @media (max-width: 790px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 995px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: 1320px) {
+        @content;
+    }
+}
+
 .container {
     max-width: 1300px;
     margin: 0 auto;
     width: 100%;
-    @media (max-width: $large) {
-        width: 950px;
+    @include lg {
+        width: 990px;
     }
-    @media (max-width: $medium) {
-        width: 720px;
-    }
+    // @media (max-width: $large) {
+    //     width: 950px;
+    // }
+    // @media (max-width: $medium) {
+    //     width: 720px;
+    // }
 }
