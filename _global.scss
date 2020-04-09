@@ -38,6 +38,9 @@
     @include lg {
         width: 990px;
     }
+    @include md {
+        width: 770px;
+    }
     // @media (max-width: $large) {
     //     width: 950px;
     // }
