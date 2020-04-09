@@ -37,6 +37,11 @@
             min-width: 20px;
             max-height: 24px;
         }
+        &-box {
+            @include xs {
+                margin-bottom: 30px;
+            }
+        }
     }
     &__title {
         max-width: 329px;
@@ -82,6 +87,9 @@
         @include lg {
             margin: 7px 0;
         }
+        @include xs {
+            padding: 5px 14px;
+        }
     }
     &__split {
         display: flex;
@@ -98,6 +106,15 @@
         columns: 2;
         list-style-type: none;
         margin: 0;
+        @include s {
+            margin-left: 20px;
+        }
+        @include xs {
+            margin-bottom: 30px;
+            columns: 1;
+            flex-basis: 100%;
+            margin-left: 40px;
+        }
         li {
             padding: 5px;
             font-size: 16px;
@@ -129,6 +146,9 @@
             @include lg {
                 padding: 15px 30px;
             }
+            @include s {
+                padding: 13px 22px;
+            }
         }
     }
     &__more {
@@ -146,6 +166,10 @@
             @include md {
                 padding: 15px 25px;
                 font-size: 15px;
+            }
+            @include xs {
+                padding: 11px 19px;
+                font-size: 14px;
             }
         }
     }
@@ -198,9 +222,10 @@
         &-top {
             display: inline-block;
             vertical-align: top;
-            flex: 1;
             @include s {
                 flex-basis: 100%;
+                min-height: 100%;
+                max-height: 100%;
             }
             img {
                 max-height: 450px;
@@ -212,6 +237,10 @@
                 @include md {
                     width: 100%;
                     min-height: 100%;
+                }
+                @include s {
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
@@ -237,6 +266,9 @@
                 margin-right: 0px;
                 margin-top: 19px;
                 margin-bottom: 19px;
+            }
+            @include s {
+                margin-top: 0;
             }
         }
     }
@@ -280,6 +312,7 @@
     &__box {
         &-top {
             display: flex;
+            flex-wrap: wrap;
             @include s {
                 flex-wrap: wrap;
             }
@@ -287,9 +320,15 @@
     }
     &__square {
         margin: 25px;
-        flex: 1;
+        flex-basis: 29%;
+        @include lg {
+            flex-basis: 26%;
+        }
         @include s {
             flex-basis: 40%;
+        }
+        @include xs {
+            flex-basis: 100%;
         }
     }
     &__icon {
