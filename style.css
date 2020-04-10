@@ -324,6 +324,11 @@ body {
   position: relative;
 }
 
+.tranings__item-row.hide {
+  display: none;
+  visibility: hidden;
+}
+
 .tranings__item-row--active {
   display: none;
 }
@@ -1339,11 +1344,6 @@ body {
   .form__button {
     padding: 12px 26px;
   }
-}
-
-.hide {
-  display: none;
-  visibility: hidden;
 }
 
 .headbar {

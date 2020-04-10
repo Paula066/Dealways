@@ -2,6 +2,10 @@
     border-bottom: 2px solid #efefef;
     &__item {
         &-row {
+            &.hide {
+                display: none;
+                visibility: hidden;
+            }
             display: flex;
             justify-content: space-around;
             align-items: center;
