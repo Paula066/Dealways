@@ -1354,7 +1354,7 @@ body {
 
 @media (max-width: 599px) {
   .headbar {
-    top: -55px;
+    top: -50px;
   }
 }
 
@@ -1451,6 +1451,13 @@ body {
   .headbar__bottom {
     padding-top: 0;
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 790px) {
+  .headbar__bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
