@@ -19,6 +19,10 @@ i.show {
     display: none;
 }
 
+.off {
+    display: none;
+}
+
 @mixin xs {
     @media (max-width: 599px) {
         @content;
