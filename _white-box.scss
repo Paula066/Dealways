@@ -3,9 +3,17 @@
     &__item {
         &-row {
             &.hide {
-                display: none;
                 visibility: hidden;
+                max-height: 0;
+                overflow: hidden;
+                padding: 0;
+                margin: 0;
             }
+            &.trans {
+                transition: max-height 0.2s, visibility 0.2s, padding 0.2s, margin 0.2s, max-height 0.2s;
+                overflow: hidden;
+            }
+            // max-height: 400px;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -16,6 +24,7 @@
             margin-top: 45px;
             margin-bottom: 15px;
             position: relative;
+            transition: 0.5s;
             &--active {
                 display: none;
             }
@@ -155,10 +164,11 @@
             }
         }
     }
-    &__more {
+    &__btn {
         text-align: center;
         margin-top: 35px;
         button {
+            position: relative;
             margin-bottom: 35px;
             font-size: 17px;
             font-weight: 600;
@@ -166,6 +176,8 @@
             color: white;
             padding: 20px 35px;
             border: none;
+            transition: transform .2s;
+            cursor: pointer;
             background-image: linear-gradient(0deg, #f08136, #e6232f);
             @include md {
                 padding: 15px 25px;
@@ -174,6 +186,19 @@
             @include xs {
                 padding: 11px 19px;
                 font-size: 14px;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 10px;
+                height: 1px;
+                z-index: -1;
+                transition: transform .2s;
+            }
+            &:hover {
+                transform: translateY(-10px);
             }
         }
     }

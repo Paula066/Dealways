@@ -7,6 +7,18 @@
     }
 }
 
+.hide {
+    display: none;
+}
+
+i.show {
+    display: none;
+}
+
+.show {
+    display: none;
+}
+
 @mixin xs {
     @media (max-width: 599px) {
         @content;
@@ -27,6 +39,12 @@
 
 @mixin lg {
     @media (max-width: 1320px) {
+        @content;
+    }
+}
+
+@mixin full {
+    @media (min-width: 1320px) {
         @content;
     }
 }
@@ -52,5 +70,31 @@
     }
     @include s {
         max-width: 585px;
+    }
+}
+
+.mobile {
+    width: 100%;
+    background-color: #e6252f;
+    &.animation {
+        transition: .3s linear;
+    }
+    &__list {
+        list-style-type: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        transition: .2s;
+    }
+    &__menu {
+        padding: 15px 30px;
+        border-bottom: 1px solid white;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__text {
+        color: white;
+        font-size: 17px;
     }
 }
