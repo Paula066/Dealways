@@ -73,10 +73,12 @@ document.querySelectorAll('.goto').forEach(item => {
 
 const burger = document.querySelector('.headbar__burger');
 const navMobile = document.querySelector('nav.mobile');
+const icons = document.querySelectorAll('.fas');
 
 const showMenu = () => {
-    console.log('klik');
-    // navMobile.style.display = "block";
+    icons.forEach((e) => {
+        e.classList.toggle('off');
+    })
     navMobile.classList.toggle('show');
 }
 
