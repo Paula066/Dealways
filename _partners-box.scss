@@ -9,6 +9,11 @@
             @include s {
                 padding: 0 25px;
             }
+            @include xs {
+                &.showMore {
+                    display: none;
+                }
+            }
         }
     }
     .circle {
