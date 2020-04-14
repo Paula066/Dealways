@@ -1,3 +1,4 @@
+@import "mixin";
 @import "body";
 @import "global";
 @import "main-header";
@@ -8,21 +9,45 @@
 @import "consultation-box";
 @import "footer-box";
 $font-small: 12px;
-.hide {
-    display: none;
-    visibility: hidden;
-}
-
-// $main-color: 
-// $default-font
-// $special-font
-// warto dodac do html font size-10px a pozniej modyfikowac ją za pomocą 2 rem czyli 20px
 .headbar {
     position: sticky;
     top: -44px;
     z-index: 500;
     @include xs {
         top: -50px;
+<<<<<<< HEAD
+=======
+    }
+    &__burger {
+        font-size: 30px;
+        transition: .3s;
+        cursor: pointer;
+        @include md {
+            display: none;
+        }
+        @include lg {
+            display: none;
+        }
+        @include full {
+            display: none;
+        }
+        @include s {
+            display: block;
+            margin-right: 20px;
+        }
+        i {
+            &.off {
+                display: none;
+            }
+        }
+    }
+    &__bucket {
+        &-icon {
+            @include s {
+                align-self: center;
+            }
+        }
+>>>>>>> master
     }
     &__top {
         display: flex;
@@ -108,30 +133,34 @@ $font-small: 12px;
         padding-right: 20px;
         ;
     }
-    .list {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0;
-        @include md {
-            padding-left: 30px;
-        }
-        &__menu {
-            list-style-type: none;
-            padding-right: 15px;
-            flex: 1;
+    nav {
+        .list {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            @include md {
+                padding-left: 30px;
+            }
             @include s {
                 display: none;
             }
-        }
-        &__text {
-            color: black;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-weight: 600;
-            padding: 15px;
-            @include md {
-                padding: 0;
-                font-size: 14px;
+            &__menu {
+                list-style-type: none;
+                padding-right: 15px;
+                flex: 1;
+            }
+            &__text {
+                color: black;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 15px;
+                transition: transform 0.2s;
+                cursor: pointer;
+                @include md {
+                    padding: 0;
+                    font-size: 14px;
+                }
             }
         }
     }

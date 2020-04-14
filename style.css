@@ -14,10 +14,15 @@ body {
   text-decoration: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
   width: 100%;
+  position: relative;
 }
 
 .container.full {
@@ -50,15 +55,56 @@ body {
   }
 }
 
+.mobile {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #e6252f;
+}
+
+.mobile[data-hidden="true"] {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile__list {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mobile__menu {
+  padding: 15px 30px;
+  border-bottom: 1px solid white;
+}
+
+.mobile__menu:last-child {
+  border-bottom: none;
+}
+
+.mobile__text {
+  color: white;
+  font-size: 17px;
+}
+
 .header__content {
   margin-top: 90px;
   margin-bottom: 240px;
   color: white;
 }
 
+@media (max-width: 599px) {
+  .header__content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 .header__content h1 {
   margin-bottom: 30px;
   font-weight: 600;
+  font-size: 27px;
 }
 
 @media (max-width: 599px) {
@@ -322,6 +368,20 @@ body {
   margin-top: 45px;
   margin-bottom: 15px;
   position: relative;
+  transition: 0.5s;
+}
+
+.tranings__item-row.hidden {
+  visibility: hidden;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.tranings__item-row.transition {
+  transition: max-height 0.2s, visibility 0.2s, padding 0.2s, margin 0.2s, max-height 0.2s;
+  overflow: hidden;
 }
 
 .tranings__item-row--active {
@@ -514,12 +574,13 @@ body {
   }
 }
 
-.tranings__more {
+.tranings__btn {
   text-align: center;
   margin-top: 35px;
 }
 
-.tranings__more button {
+.tranings__btn button {
+  position: relative;
   margin-bottom: 35px;
   font-size: 17px;
   font-weight: 600;
@@ -527,21 +588,38 @@ body {
   color: white;
   padding: 20px 35px;
   border: none;
+  transition: transform .2s;
+  cursor: pointer;
   background-image: linear-gradient(0deg, #f08136, #e6232f);
 }
 
 @media (max-width: 995px) {
-  .tranings__more button {
+  .tranings__btn button {
     padding: 15px 25px;
     font-size: 15px;
   }
 }
 
 @media (max-width: 599px) {
-  .tranings__more button {
+  .tranings__btn button {
     padding: 11px 19px;
     font-size: 14px;
   }
+}
+
+.tranings__btn button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 1px;
+  z-index: -1;
+  transition: transform .2s;
+}
+
+.tranings__btn button:hover {
+  transform: translateY(-10px);
 }
 
 .trainer__header-top {
@@ -717,10 +795,6 @@ body {
   }
 }
 
-.text-center {
-  text-align: center;
-}
-
 .mission__box-top {
   display: flex;
   flex-wrap: wrap;
@@ -872,6 +946,12 @@ body {
 @media (max-width: 790px) {
   .partners__logo a {
     padding: 0 25px;
+  }
+}
+
+@media (max-width: 599px) {
+  .partners__logo a.showMore {
+    display: none;
   }
 }
 
@@ -1341,11 +1421,6 @@ body {
   }
 }
 
-.hide {
-  display: none;
-  visibility: hidden;
-}
-
 .headbar {
   position: sticky;
   top: -44px;
@@ -1355,6 +1430,50 @@ body {
 @media (max-width: 599px) {
   .headbar {
     top: -50px;
+<<<<<<< HEAD
+=======
+  }
+}
+
+.headbar__burger {
+  font-size: 30px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+@media (max-width: 995px) {
+  .headbar__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 1320px) {
+  .headbar__burger {
+    display: none;
+  }
+}
+
+@media (min-width: 1320px) {
+  .headbar__burger {
+    display: none;
+  }
+}
+
+@media (max-width: 790px) {
+  .headbar__burger {
+    display: block;
+    margin-right: 20px;
+  }
+}
+
+.headbar__burger i.off {
+  display: none;
+}
+
+@media (max-width: 790px) {
+  .headbar__bucket-icon {
+    align-self: center;
+>>>>>>> master
   }
 }
 
@@ -1466,40 +1585,42 @@ body {
   padding-right: 20px;
 }
 
-.headbar .list {
+.headbar nav .list {
   display: flex;
   align-items: center;
   margin-bottom: 0;
 }
 
 @media (max-width: 995px) {
-  .headbar .list {
+  .headbar nav .list {
     padding-left: 30px;
   }
 }
 
-.headbar .list__menu {
+@media (max-width: 790px) {
+  .headbar nav .list {
+    display: none;
+  }
+}
+
+.headbar nav .list__menu {
   list-style-type: none;
   padding-right: 15px;
   flex: 1;
 }
 
-@media (max-width: 790px) {
-  .headbar .list__menu {
-    display: none;
-  }
-}
-
-.headbar .list__text {
+.headbar nav .list__text {
   color: black;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
   padding: 15px;
+  transition: transform 0.2s;
+  cursor: pointer;
 }
 
 @media (max-width: 995px) {
-  .headbar .list__text {
+  .headbar nav .list__text {
     padding: 0;
     font-size: 14px;
   }
