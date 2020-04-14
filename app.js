@@ -17,12 +17,12 @@ window.addEventListener('scroll', () => {
 })
 
 const btnMoreTranings = document.getElementById('trainings-button');
-const traningRow = document.querySelectorAll('.tranings__item-row.hide');
+const traningRow = document.querySelectorAll('.tranings__item-row.hidden');
 
 
 const showMoreTranings = () => {
     traningRow.forEach((e) => {
-        e.classList.remove('hide');
+        e.classList.remove('hidden');
     })
     btnMoreTranings.style.display = "none";
 }
@@ -64,7 +64,7 @@ const goto = function(e) {
     const href = this.getAttribute('href');
     const handler = document.querySelector(href);
     history.replaceState(null, document.title, href)
-    handler.scrollIntoView({ behavior: 'smooth' })
+    handler && handler.scrollIntoView({ behavior: 'smooth' })
 }
 
 document.querySelectorAll('.goto').forEach(item => {
@@ -76,10 +76,16 @@ const navMobile = document.querySelector('nav.mobile');
 const icons = document.querySelectorAll('.fas');
 
 const showMenu = () => {
+    const menuData = navMobile.dataset;
     icons.forEach((e) => {
         e.classList.toggle('off');
     })
-    navMobile.classList.toggle('show');
+    menuData.hidden = menuData.hidden === "true" ? "false" : "true";
+
 }
 
 burger.addEventListener('click', showMenu)
+
+
+// let ryba = true;
+// let okon = ryba === true ? 'qer' : 'zxv'

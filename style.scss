@@ -1,3 +1,4 @@
+@import "mixin";
 @import "body";
 @import "global";
 @import "main-header";
@@ -8,10 +9,6 @@
 @import "consultation-box";
 @import "footer-box";
 $font-small: 12px;
-// $main-color: 
-// $default-font
-// $special-font
-// warto dodac do html font size-10px a pozniej modyfikowac ją za pomocą 2 rem czyli 20px
 .headbar {
     position: sticky;
     top: -44px;
@@ -35,6 +32,11 @@ $font-small: 12px;
         @include s {
             display: block;
             margin-right: 20px;
+        }
+        i {
+            &.off {
+                display: none;
+            }
         }
     }
     &__bucket {

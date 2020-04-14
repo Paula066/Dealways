@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Dealways</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&display=swap&subset=latin-ext" rel="stylesheet">
 </head>
@@ -32,7 +29,7 @@
             </div>
             <div class="headbar__bottom active">
                 <div class="headbar__logo">
-                    <img class="headbar__logo-img" src="./img/logo.png">
+                    <img class="headbar__logo-img" src="./img/logo.png" alt="">
                 </div>
                 <div class="headbar__right">
                     <div class="headbar__burger">
@@ -41,31 +38,31 @@
                     </div>
                     <nav class="nav">
                         <ul class="list animation">
-                            <li class="list__menu ">
-                                <a class="list__text " href="#szkolena">szkolenia</a>
+                            <li class="list__menu">
+                                <a class="list__text goto" href="#szkolenia">szkolenia</a>
                             </li>
-                            <li class="list__menu ">
-                                <a class="list__text " href="#konsultacje">konsulatcje</a>
+                            <li class="list__menu">
+                                <a class="list__text goto" href="#konsultacje">konsulatcje</a>
                             </li>
-                            <li class="list__menu ">
-                                <a class="list__text " href="#trenerzy">trenerzy</a>
+                            <li class="list__menu">
+                                <a class="list__text goto" href="#trenerzy">trenerzy</a>
                             </li>
                             <li class="list__menu ">
                                 <a class="list__text" href="#">blog</a>
                             </li>
                             <li class="list__menu">
-                                <a class="list__text " href="#kontakt">kontakt</a>
+                                <a class="list__text goto" href="#kontakt">kontakt</a>
                             </li>
                         </ul>
                     </nav>
                     <a class="headbar__bucket-icon">
-                        <img class="headbar__bukcet-image" src="./img/ico-trolley.png">
+                        <img class="headbar__bukcet-image" alt="" src="./img/ico-trolley.png">
                     </a>
                 </div>
             </div>
-            <nav class="mobile animation show">
+            <nav class="mobile hidden" data-hidden="true">
                 <ul class="mobile__list">
-                    <li class="mobile__menu ">
+                    <li class="mobile__menu">
                         <a class="mobile__text " href="#szkolena">szkolenia</a>
                     </li>
                     <li class="mobile__menu ">
@@ -110,7 +107,7 @@
                     <div class="forWho__title">
                         <h4>Osoby początkujące</h4>
                     </div>
-                    <p id="test">Dla osób które planują uruchomić i sprzedawać przez sklep internetowy</p>
+                    <p>Dla osób które planują uruchomić i sprzedawać przez sklep internetowy</p>
                 </div>
                 <div class="forWho__box">
                     <div class="forWho__icon-box">
@@ -141,8 +138,8 @@
                 </div>
             </div>
 
-            <section class="specialization">
-                <div id="test" class="specialization__header-top">
+            <section id="szkolenia" class="specialization">
+                <div class="specialization__header-top">
                     <h2>Specjalizujemy się w:</h2>
                 </div>
                 <div class="specialize">
@@ -175,7 +172,7 @@
             <div class="container">
                 <div class="tranings__item-row trans">
                     <div class="tranings__icon-box">
-                        <img class="tranings__icon" src="./img/ico1.png">
+                        <img class="tranings__icon" src="./img/ico1.png" alt="">
                     </div>
                     <div class="tranings__title-box">
                         <div class="tranings__split">
@@ -199,7 +196,7 @@
                 </div>
                 <div class="tranings__item-row trans">
                     <div class="tranings__icon-box">
-                        <img class="tranings__icon" src="./img/house.png">
+                        <img class="tranings__icon" src="./img/house.png" alt="">
                     </div>
                     <div class="tranings__title-box">
                         <div class="tranings__split">
@@ -223,7 +220,7 @@
                 </div>
                 <div class="tranings__item-row trans">
                     <div class="tranings__icon-box">
-                        <img class="tranings__icon" src="./img/people.png">
+                        <img class="tranings__icon" src="./img/people.png" alt="">
                     </div>
                     <div class="tranings__title-box">
                         <div class="tranings__split">
@@ -247,7 +244,7 @@
                 </div>
                 <div class="tranings__item-row trans">
                     <div class="tranings__icon-box">
-                        <img class="tranings__icon" src="./img/house.png">
+                        <img class="tranings__icon" src="./img/house.png" alt="">
                     </div>
                     <div class="tranings__title-box">
                         <div class="tranings__split">
@@ -269,13 +266,17 @@
                         <button>szczegóły</button>
                     </div>
                 </div>
-                <div class="tranings__item-row hide trans">
+                <div class="tranings__item-row hidden trans">
                     <div class="tranings__icon-box">
-                        <img class="tranings__icon" src="./img/house.png">
+                        <img class="tranings__icon" src="./img/house.png" alt="">
                     </div>
                     <div class="tranings__title-box">
-                        <p class="tranings__text">26 sierpnia</p>
-                        <span class="tranings__cert">certyfikat</span>
+                        <div class="tranings__split">
+                            <p class="tranings__text">26 sierpnia</p>
+                            <div class="tranings__certBox">
+                                <span class="tranings__cert">certyfikat</span>
+                            </div>
+                        </div>
                         <p class="tranings__title">Zrozumieć Dropshipping</p>
                     </div>
                     <ul class="tranings__info">
@@ -289,13 +290,17 @@
                         <button>szczegóły</button>
                     </div>
                 </div>
-                <div class="tranings__item-row hide trans">
+                <div class="tranings__item-row hidden trans">
                     <div class="tranings__icon-box">
-                        <img class="tranings__icon" src="./img/house.png">
+                        <img class="tranings__icon" src="./img/house.png" alt="">
                     </div>
                     <div class="tranings__title-box">
-                        <p class="tranings__text">26 sierpnia</p>
-                        <span class="tranings__cert">certyfikat</span>
+                        <div class="tranings__split">
+                            <p class="tranings__text">26 sierpnia</p>
+                            <div class="tranings__certBox">
+                                <span class="tranings__cert">certyfikat</span>
+                            </div>
+                        </div>
                         <p class="tranings__title">Zrozumieć Dropshipping</p>
                     </div>
                     <ul class="tranings__info">
@@ -309,13 +314,17 @@
                         <button>szczegóły</button>
                     </div>
                 </div>
-                <div class="tranings__item-row hide trans">
+                <div class="tranings__item-row hidden trans">
                     <div class="tranings__icon-box">
-                        <img class="tranings__icon" src="./img/house.png">
+                        <img class="tranings__icon" src="./img/house.png" alt="">
                     </div>
                     <div class="tranings__title-box">
-                        <p class="tranings__text">26 sierpnia</p>
-                        <span class="tranings__cert">certyfikat</span>
+                        <div class="tranings__split">
+                            <p class="tranings__text">26 sierpnia</p>
+                            <div class="tranings__certBox">
+                                <span class="tranings__cert">certyfikat</span>
+                            </div>
+                        </div>
                         <p class="tranings__title">Zrozumieć Dropshipping</p>
                     </div>
                     <ul class="tranings__info">
@@ -513,13 +522,13 @@
                 <a href="">
                     <img src="./img/apple.png" alt="">
                 </a>
-                <a href="" class="hide">
+                <a href="" class="">
                     <img src="./img/apple.png" alt="">
                 </a>
-                <a href="" class="hide">
+                <a href="" class="showMore">
                     <img src="./img/apple.png" alt="">
                 </a>
-                <a href="" class="hide">
+                <a href="" class="showMore">
                     <img src="./img/apple.png" alt="">
                 </a>
                 <div class="partners__arrow circle circle--right">
@@ -536,7 +545,7 @@
             <div class="consultation__main">
                 <div class="consultation__box">
                     <div class="consultation__text">
-                        <p>Masz pytania z zakresu E-commerce?</br> Umów się na konsultacje. Pomożemy.
+                        <p>Masz pytania z zakresu E-commerce?<br> Umów się na konsultacje. Pomożemy.
                         </p>
                     </div>
                     <div class="consultation__price">
@@ -594,25 +603,22 @@
                 </div>
                 <div class="form__content">
                     <label for="firstname" class="form__label">Telefon</label>
-                    <input type="text" id="firstname" name="firstname" class="form__input">
+                    <input type="text" id="phone" name="firstname" class="form__input">
                 </div>
                 <div class="form__content">
                     <label for="firstname" class="form__label">Email Address</label>
-                    <input type="text" id="firstname" name="firstname" class="form__input">
+                    <input type="text" id="email" name="firstname" class="form__input">
                 </div>
                 <div class="form__content">
                     <label for="firstname" class="form__label">Treść</label>
-                    <textarea id="firstname" name="firstname" class="form__input form__input--text"></textarea>
+                    <textarea id="content" name="firstname" class="form__input form__input--text"></textarea>
                 </div>
                 <div class="form__btn">
                     <button class="form__button">wyślij</button>
                 </div>
             </form>
-
-
         </div>
     </footer>
-
     <script src="./app.js"></script>
 </body>
 
