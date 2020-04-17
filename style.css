@@ -1430,6 +1430,8 @@ body {
 @media (max-width: 599px) {
   .headbar {
     top: -50px;
+<<<<<<< HEAD
+=======
   }
 }
 
@@ -1471,6 +1473,7 @@ body {
 @media (max-width: 790px) {
   .headbar__bucket-icon {
     align-self: center;
+>>>>>>> master
   }
 }
 
