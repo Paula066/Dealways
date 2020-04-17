@@ -15,8 +15,6 @@ $font-small: 12px;
     z-index: 500;
     @include xs {
         top: -50px;
-<<<<<<< HEAD
-=======
     }
     &__burger {
         font-size: 30px;
@@ -47,7 +45,6 @@ $font-small: 12px;
                 align-self: center;
             }
         }
->>>>>>> master
     }
     &__top {
         display: flex;
